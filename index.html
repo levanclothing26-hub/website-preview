@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f4f6" />
+    <meta name="description" content="LEVAN — New Standard in Office Wear, built around the Levan Comfort System." />
+    <title>LEVAN — New Standard in Office Wear</title>
+    <link rel="preload" as="image" href="./assets/campaign-white-studio.jpg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      {"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}
+    </script>
+    <script type="module" src="./script.js"></script>
+<script type="module" src="./content.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark wordmark-image" href="#top" aria-label="LEVAN home"></a>
+      <nav class="topbar-nav" aria-label="Main navigation">
+        <a href="#about" data-cms="header-about">ABOUT</a>
+        <a href="#system" data-cms="header-system">COMFORT SYSTEM</a>
+        <a href="#range" data-cms="header-range">SHIRT LIBRARY</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-label">DARK</span></button>
+      <a class="header-cta" href="#locations"><span data-cms="header-contact">FIND LEVAN</span> <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">LEVAN / OFFICEWEAR ENGINEERED <span>01 — 08</span></p>
+          <h1 data-cms="text-1">New Standard<br /><em>in Office Wear</em></h1>
+          <a href="#about" class="scroll-cue"><span class="cue-line"></span>DISCOVER THE LEVAN SYSTEM <span class="cue-arrow">↘</span></a>
+        </div>
+        <div class="hero-caption"><span>NEW STANDARD IN OFFICE WEAR</span><span>THE LEVAN COMFORT SYSTEM</span></div>
+      </section>
+
+      <div class="signal-ribbon" aria-label="LEVAN. New Standard in Office Wear. Designed for the working day.">
+        <div class="signal-track" aria-hidden="true"><span>NEW STANDARD IN OFFICE WEAR <b>↗</b></span><span>PREMIUM MADE ACCESSIBLE <b>↗</b></span><span>MADE FOR THE WORKING DAY <b>↗</b></span><span>NEW STANDARD IN OFFICE WEAR <b>↗</b></span><span>PREMIUM MADE ACCESSIBLE <b>↗</b></span><span>MADE FOR THE WORKING DAY <b>↗</b></span></div>
+      </div>
+
+      <section class="about" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">02 / WHO WE ARE <span>LEVAN, BY DESIGN</span></p>
+          <h2 data-cms="text-2">Officewear<br />for the <em>full day.</em></h2>
+          <p data-cms="text-3">LEVAN is a Sri Lankan formalwear brand, shaped around a simple idea: the shirt should feel considered through the whole working day.</p>
+          <p data-cms="text-4">We bring together refined formal style and the LEVAN Comfort System in a focused collection of shirts.</p>
+          <a href="#range" class="text-link">EXPLORE THE SHIRT LIBRARY <span>↗</span></a>
+        </div>
+        <figure class="about-visual">
+          <img src="./assets/levan-shirt-worn-reference.jpg" alt="LEVAN blue-and-white striped formal shirt worn with a pointed collar and chest pocket"  data-cms="image-38" />
+          <figcaption><span>DESIGNED AROUND THE WORKING DAY</span><b>LEVAN / 01</b></figcaption>
+          <span class="visual-crosshair" aria-hidden="true">+</span>
+        </figure>
+      </section>
+
+      <section class="manifesto" id="experience">
+        <div class="manifesto-left">
+          <p class="eyebrow">03 / FORM IN MOTION <span>THE LEVAN COMFORT SYSTEM</span></p>
+          <h2 data-cms="text-5">Designed to<br /><em>move with you.</em></h2>
+          <p class="manifesto-copy" data-cms="text-6">We don’t sell cotton, buttons and sleeves.<br />We build an engineered formal-wear system for the way you move through your day.</p>
+          <a href="#system" class="text-link">SEE WHAT MAKES IT DIFFERENT <span>↘</span></a>
+        </div>
+        <div class="portrait-stage" aria-label="LEVAN shirt motion reference; a dressed-human 3D model is not yet available">
+          <div class="stage-index"><span>THE LEVAN COMFORT SYSTEM</span><span id="frame-count">MOTION REFERENCE</span></div>
+          <div class="video-frame">
+            <canvas id="human-model-canvas" class="human-model-canvas" aria-label="Interactive human-worn LEVAN shirt model" hidden></canvas>
+            <video id="shirt-video" class="shirt-video" muted playsinline preload="metadata" aria-label="LEVAN shirt motion reference video. This is not the final dressed-human 3D model.">
+              <source src="./assets/levan-comfort-system-animation.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p id="model-status" class="model-status" role="status" aria-live="polite">LOADING THE LEVAN ANIMATION</p>
+          <div class="stage-annotation"><span class="annotation-dot"></span><span id="stage-label">FILMED MOTION REFERENCE</span></div>
+          <div class="stage-progress"><span id="stage-progress-fill"></span></div>
+          <div class="rotation-controls"><button id="motion-toggle" type="button" aria-pressed="false">PLAY</button><span>TURN</span><input id="rotation-slider" type="range" min="0" max="1000" value="0" aria-label="Scrub the LEVAN shirt animation"><span>SYSTEM</span></div>
+          <p class="rotation-note">DRAG TO TURN <span>·</span> SCROLL A LITTLE TO EXPLORE</p>
+        </div>
+      </section>
+
+      <section class="system" id="system">
+        <div class="system-head">
+          <div><p class="eyebrow">04 / THE COMFORT SYSTEM <span>SIX CONNECTED IDEAS</span></p><h2 data-cms="text-7">Function,<br /><em>beautifully fitted.</em></h2></div>
+          <p class="system-intro" data-cms="text-8">Six considered details come together in a more thoughtful approach to formalwear.</p>
+        </div>
+        <div class="system-content">
+          <div class="diagram-wrap">
+            <img src="./assets/comfort-system-engineering.jpg" alt="LEVAN engineered performance shirt infographic showing breathable fabric, comfortable stretch, shape retention, reinforced collar, precision fit, and premium finishing"  data-cms="image-39" />
+          </div>
+          <div class="feature-list">
+            <article class="feature is-current is-visible"><span class="feature-number">01</span><div><h3 data-cms="text-9">Breathable fabric</h3><p data-cms="text-10">Breathable construction supports comfort through the working day.</p></div><span class="feature-arrow">↗</span></article>
+            <article class="feature"><span class="feature-number">02</span><div><h3 data-cms="text-11">Comfortable stretch</h3><p data-cms="text-12">Fabric flexibility supports natural movement through the day.</p></div><span class="feature-arrow">↗</span></article>
+            <article class="feature"><span class="feature-number">03</span><div><h3 data-cms="text-13">Shape retention</h3><p data-cms="text-14">Structured construction is designed to hold its form.</p></div><span class="feature-arrow">↗</span></article>
+            <article class="feature"><span class="feature-number">04</span><div><h3 data-cms="text-15">Reinforced collar</h3><p data-cms="text-16">Collar structure designed to stay sharp through the day.</p></div><span class="feature-arrow">↗</span></article>
+            <article class="feature"><span class="feature-number">05</span><div><h3 data-cms="text-17">Precision fit</h3><p data-cms="text-18">Considered proportions for a clean, comfortable silhouette.</p></div><span class="feature-arrow">↗</span></article>
+            <article class="feature"><span class="feature-number">06</span><div><h3 data-cms="text-19">Premium finishing</h3><p data-cms="text-20">Thoughtful attention carried through every detail.</p></div><span class="feature-arrow">↗</span></article>
+          </div>
+        </div>
+        <div class="system-foot"><span>01 — 06 / FEATURES</span><span>ENGINEERED FORMALWEAR</span><span>LEVAN · COMFORT SYSTEM</span></div>
+      </section>
+
+      <section class="product-range" id="range">
+        <div class="range-head">
+          <div><p class="eyebrow">05 / THE SHIRT LIBRARY <span>THREE CONSIDERED ESSENTIALS</span></p><h2 data-cms="text-21">Find your<br /><em>Everyday Style</em></h2></div>
+          <p data-cms="text-22">Explore the LEVAN shirt range through white, solid blue and signature stripe.</p>
+        </div>
+        <div class="range-toolbar">
+          <div class="range-filters" role="group" aria-label="Filter shirts by style">
+            <button class="range-filter is-active" type="button" data-range-filter="all" aria-pressed="true">ALL SHIRTS <span>03</span></button>
+            <button class="range-filter" type="button" data-range-filter="solid" aria-pressed="false">SOLID <span>02</span></button>
+            <button class="range-filter" type="button" data-range-filter="stripe" aria-pressed="false">STRIPE <span>01</span></button>
+          </div>
+          <p class="range-view-note"><span class="range-live-dot"></span> SELECT A SHIRT TO EXPLORE</p>
+        </div>
+        <div class="range-grid">
+          <article class="range-card range-card--white" data-category="solid">
+            <div class="range-visual"><img src="./assets/campaign-white.jpg" alt="Model wearing a white formal shirt"  data-cms="image-40" /><span>01</span></div>
+            <div class="range-card-copy"><p data-cms="text-23">THE ESSENTIAL <span>01 / 03</span></p><h3 data-cms="text-24">White formal shirt</h3><p data-cms="text-25">A clean white foundation with a pointed collar, front button placket and refined cuff finishing.</p><a href="#locations">FIND A LOCATION <span>↗</span></a></div>
+          </article>
+          <article class="range-card range-card--blue" data-category="solid">
+            <div class="range-visual"><img src="./assets/campaign-blue.jpg" alt="LEVAN solid blue formal shirt worn with tailored trousers"  data-cms="image-41" /><span>02</span></div>
+            <div class="range-card-copy"><p data-cms="text-26">THE MODERN CLASSIC <span>02 / 03</span></p><h3 data-cms="text-27">Blue formal shirt</h3><p data-cms="text-28">A confident solid-blue option with a clean collar and considered details for a polished daily look.</p><a href="#locations">FIND A LOCATION <span>↗</span></a></div>
+          </article>
+          <article class="range-card range-card--stripe" data-category="stripe">
+            <div class="range-visual"><img src="./assets/levan-shirt-worn-reference.jpg" alt="LEVAN blue-and-white vertical stripe shirt with a pointed collar and chest pocket"  data-cms="image-42" /><span>03</span></div>
+            <div class="range-card-copy"><p data-cms="text-29">THE SIGNATURE STRIPE <span>03 / 03</span></p><h3 data-cms="text-30">Blue stripe shirt</h3><p data-cms="text-31">Vertical blue-and-white stripes, a chest pocket, button front and double-button cuffs.</p><a href="#locations">FIND A LOCATION <span>↗</span></a></div>
+          </article>
+        </div>
+        <a href="#system" class="range-link">EXPLORE THE COMFORT SYSTEM <span>↗</span></a>
+      </section>
+
+      <section class="details" id="details">
+        <div class="details-copy"><div class="details-title"><p class="eyebrow">06 / FINISH &amp; FORM <span>THE SMALL DECISIONS</span></p><h2 data-cms="text-32">Thought through<br /><em>to the last stitch.</em></h2></div><p data-cms="text-33">From a clean collar line to the finishing at the cuff, the small decisions shape the way the whole shirt feels.</p></div>
+        <figure class="detail-photo cuff"><div class="detail-image"><img src="./assets/detail-cuff.jpg" alt="Close-up of LEVAN white shirt cuff, button and embroidered mark"  data-cms="image-43" /></div><figcaption>01 / THE Levan Gold <span>FINISHING, MADE VISIBLE</span></figcaption></figure>
+        <figure class="detail-photo stripe"><div class="detail-image"><img src="./assets/detail-striped-cuff.jpg" alt="Close-up of LEVAN striped shirt cuff and button detail"  data-cms="image-44" /></div><figcaption>02 / THE Levan Silver <span>PRECISION IN THE SMALL THINGS</span></figcaption></figure>
+      </section>
+
+      <section class="location-lead" id="locations">
+        <div class="location-intro"><p class="eyebrow">07 / FIND LEVAN NEAR YOU <span>WE’LL KEEP YOU CLOSE</span></p><h2 data-cms="text-34">Your next<br /><em>LEVAN, nearby.</em></h2><p data-cms="text-35">Interested in LEVAN? Tell us where you are and how to reach you. We will notify you about the nearest location.</p></div>
+        <p class="preview-message">DESIGN REVIEW PREVIEW — Customer enquiries and Content Studio are available only in the server-hosted version.</p><form class="lead-form" id="lead-form"><fieldset disabled class="preview-form-fields">
+          <label>Your name<input name="name" autocomplete="name" required maxlength="100" /></label>
+          <label>Email or phone<input name="contact" autocomplete="email" required maxlength="160" /></label>
+          <label>Your town or area<input name="location" autocomplete="address-level2" required maxlength="120" /></label>
+          <label class="lead-honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <button type="submit">NOTIFY ME <span>↗</span></button>
+          <p class="lead-privacy">By submitting, you agree that LEVAN may use these details to contact you about a nearby location.</p>
+          <p class="lead-status" id="lead-status" role="status" aria-live="polite"></p>
+        </fieldset></form>
+      </section>
+
+      <section class="journal" id="journal" hidden><div class="journal-heading"><p class="eyebrow">THE LEVAN JOURNAL</p><h2>Latest from LEVAN</h2></div><div id="post-grid" class="post-grid"></div></section>
+      <section class="finale">
+        <img src="./assets/campaign-white-studio.jpg" alt="LEVAN model wearing a white formal shirt in a studio portrait"  data-cms="image-45" />
+        <div class="finale-shade"></div>
+        <div class="finale-copy"><p class="eyebrow light">A NEW PERSPECTIVE <span>08 / 08</span></p><div class="finale-wordmark-image" role="img" aria-label="Levan logo"></div><div class="brand-rule"><i></i><i></i><i></i></div><p class="finale-tagline" data-cms="text-36">NEW STANDARD<br />IN OFFICE WEAR</p><a href="#locations" class="finale-cta">FIND YOUR NEAREST LOCATION <span>↗</span></a></div>
+        <div class="finale-side">LEVAN / SRI LANKA <span>08 / 08</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="wordmark wordmark-image" href="#top" aria-label="LEVAN home"></a><p class="footer-tagline">NEW STANDARD<br>IN OFFICE WEAR</p><p class="footer-description" data-cms="footer-description">Considered formalwear. Made for your working day.</p><span class="footer-sample">SAMPLE CONTACT DETAILS — FOR PREVIEW ONLY</span></div>
+        <div class="footer-column"><h2>LET’S TALK</h2><p class="footer-label">PHONE / WHATSAPP</p><p data-cms="footer-phone">+94 (0) 00 000 0000</p><p class="footer-label">EMAIL</p><p data-cms="footer-email">hello@levan.example</p><a class="footer-link" data-cms-link="footer-contact-url" hidden>CONTACT US ↗</a></div>
+        <div class="footer-column"><h2>FIND US</h2><address data-cms="footer-address">No. 123, Sample Street
+Colombo 03, Sri Lanka</address><a class="footer-link" data-cms-link="footer-map-url" hidden>GET DIRECTIONS ↗</a><p class="footer-label">OPENING HOURS</p><p data-cms="footer-hours">Monday–Saturday: 9 AM–6 PM
+Sunday: Closed</p></div>
+        <div class="footer-column"><h2>STAY CONNECTED</h2><p data-cms="footer-social-note">Follow our next chapter.</p><div class="footer-socials"><a data-cms-link="footer-instagram-url" hidden>INSTAGRAM ↗</a><a data-cms-link="footer-facebook-url" hidden>FACEBOOK ↗</a></div><p class="footer-placeholder">Social links coming soon</p><a class="footer-link" href="#locations">FIND LEVAN NEAR YOU ↗</a></div>
+      </div>
+      <div class="footer-bottom"><p>© <span id="footer-year">2026</span> LEVAN. All rights reserved.</p><a data-cms-link="footer-privacy-url" hidden>PRIVACY POLICY</a><a href="#top">BACK TO TOP ↑</a></div>
+    </footer>
+    <noscript><p class="noscript" data-cms="text-37">Scroll interactions need JavaScript. The Comfort System and shirt range remain available below.</p></noscript>
+  </body>
+</html>
